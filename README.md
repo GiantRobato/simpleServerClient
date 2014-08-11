@@ -33,11 +33,22 @@ and stops the server.
 
 Tips
 ----
->**ServerSocket server(<port number>)**
+>**ServerSocket server(port no.)**
 >
->Cretes a socket on specific port
+>Cretes a socket on port no. You also need to run:
 >
 >```
 >ServerSocket new_sock;
 >server.accept (new_sock);
 >```
+>
+>to get a reference to the connection and by running:
+>
+>```
+>std::string data
+>new_sock >> data;
+>```
+>
+>you set up a blocking call to listen on the connection and write the
+>data out to the string
+
