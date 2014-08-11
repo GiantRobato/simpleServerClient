@@ -30,3 +30,14 @@ We recieved this response from the server:
 "Test message."
 ```
 and stops the server.
+
+Tips
+----
+>**ServerSocket server(<port number>)**
+>
+>Cretes a socket on specific port
+>
+>```
+>ServerSocket new_sock;
+>server.accept (new_sock);
+>```
